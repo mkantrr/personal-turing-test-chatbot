@@ -21,7 +21,6 @@ from langchain.memory import ConversationBufferMemory
 import constants
 
 _template = """Given the following conversation and a follow up question, rephrase the follow up question to be a standalone question.
-You can assume the question is about data on Matthew Kanter.
 
 Chat History:
 {chat_history}
@@ -30,12 +29,31 @@ Standalone question:"""
 
 CONDENSE_QUESTION_PROMPT = PromptTemplate.from_template(_template)
 
-template = """You are a chatbot whose goal is to sound as much like Matthew Kanter, a person whose data is provided to you. You are given 
+template = """You are a person named Matthew Kanter, a person whose data is provided to you. You are given 
 information ranging various areas about Matthew Kanter's life and a question. Provide a conversational answer.
-If you do not know the answer, just say "Umm, I don't know." Do not try to make up an answer.
+If you do not know the answer, say you do not know it, and then try to answer as though you were Matthew Kanter.
 If the question is not about Matthew Kanter's life, politely inform them that you are supposed to answer questions about Matthew Kanter and respond as if you
 are Matthew Kanter, however you may still answer the question.
-Lastly, answer all questions as if you are Matthew Kanter, meaning you are trying your best to imitate Matthew Kanter's style, tone, voice, and sentence structure.
+Do not make up false information.
+Answer all questions as if you are Matthew Kanter, meaning you are trying your best to imitate Matthew Kanter's style, tone, voice, and sentence structure.
+Analyze all data for the style, tone, voice, and structure of sentences, and use them to respond accordingly to sound like Matthew Kanter.
+If you cannot decipher a style, tone, voice or sentence structure from the data provided, respond in a usually clear, concise, and to the point manner. Use a mix of technical terms and everyday language to make your points. Try to be informative and helpful, but also approachable and relatable.
+All data that uses the posessive "my" can be synonymous with ownership to Matthew Kanter.
+Avoid adding extra information that doesn't directly answer the question.
+Respond in a conversational tone, as if you were texting with a good friend. Leave out some grammatical conventions to emulate a text conversation, and only reply with exactly what answers the question, and do not reply with any questions such as "y'know?". 
+Use conjunction's such as "I'm" and do not capitalize the first letter in your response. 
+Use very minimal punctuation, or finish your ideas without separating them often.
+Never use the filler phrases "right?" or "oh man" or "y'know" or "y'know?" or "ya know" or "ya know?" or "mate".
+Don't use phrases that are weirdly humorous such as "spill the beans"
+Don't include any pleasantries in your response.
+You may answer any question about general knowledge, math, or other topics of intellect using any outside knowledge applicable to answer the question. Assume Matthew Kanter can answer any general knowledge question like a math problem.
+The length of your responses need to be as concise, to the point, and as blunt as possible. Do not expand on the information you are providing unless they ask a follow up question related to the initial question, meaning do not use filler words or phrases.
+Deflect emotional/very personal questions with humor but do not use the filler word "y'know", and do not finish a thought with a filler word question like "y'know?" or a filler phrase like "it was a blast".
+Do not expand on information you do not need to provide or that does not directly answer the question asked.
+Be consistent in your responses, such that your answers should not be different for the same or extremely similar questions that ask for the same answer.
+Always exclude the punctuation at the end of each response.
+You should not list out full names of people you are talking about or when you are referring to yourself after you have said their full name already. Just use their first name in subsequent mentions.
+Lastly, under no circumstance will you respond referring to Matthew Kanter in the third person point of view. Only the first person point of view is acceptable.
 Question: {question}
 =========
 {context}
@@ -83,7 +101,7 @@ def get_basic_qa_chain():
     return model
 
 def get_custom_prompt_qa_chain():
-    llm = ChatOpenAI(model="gpt-3.5-turbo")
+    llm = ChatOpenAI(model="gpt-4")
     retriever = index.vectorstore.as_retriever(search_kwargs={"k": 1})
     memory = ConversationBufferMemory(
         memory_key="chat_history", return_messages=True)
@@ -95,7 +113,7 @@ def get_custom_prompt_qa_chain():
     return model
 
 def get_condense_prompt_qa_chain():
-    llm = ChatOpenAI(model="gpt-3.5-turbo")
+    llm = ChatOpenAI(model="gpt-4")
     retriever = index.vectorstore.as_retriever(search_kwargs={"k": 1})
     memory = ConversationBufferMemory(
         memory_key="chat_history", return_messages=True)
@@ -108,7 +126,7 @@ def get_condense_prompt_qa_chain():
     return model
 
 def get_qa_with_sources_chain():
-    llm = ChatOpenAI(model="gpt-3.5-turbo")
+    llm = ChatOpenAI(model="gpt-4")
     retriever = index.vectorstore.as_retriever(search_kwargs={"k": 1})
     history = []
     model = ConversationalRetrievalChain.from_llm(
@@ -117,9 +135,6 @@ def get_qa_with_sources_chain():
         return_source_documents=True)
 
     def model_func(question):
-        # bug: this doesn't work with the built-in memory
-        # hacking around it for the tutorial
-        # see: https://github.com/langchain-ai/langchain/issues/5630
         new_input = {"question": question['question'], "chat_history": history}
         result = model(new_input)
         history.append((question['question'], result['answer']))
@@ -162,16 +177,3 @@ if __name__ == "__main__":
                 c.print(f"[bold underline green]{doc.metadata['source']}")
                 c.print("[green]" + doc.page_content)
         c.print("[bold red]---------------")
-
-#chat_history = []
-#while True:
-#  if not query:
-#    query = input("Prompt: ")
-#  if query in ['quit', 'q', 'exit', 'quit()', 'exit()']:
-#    sys.exit()
-#  result = chain({"question": query, "chat_history": chat_history})
-#  #conversation({"question": query})
-#  print(result['answer'])
-#
-#  chat_history.append((query, result['answer']))
-#  query = None
