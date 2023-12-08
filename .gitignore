@@ -3,4 +3,7 @@ __pycache__
 persist/
 .DS_Store
 .chroma/
-sampledata_test
+sampledata_test/
+*.txt
+*.pdf
+*.swp
