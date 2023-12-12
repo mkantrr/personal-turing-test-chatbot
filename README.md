@@ -35,7 +35,7 @@ series of turing tests personalized to my own "life" data to allow it to mimic h
 who have had close communication with me a good portion of my life over text messaging (SMS) as much as possible.
 
 A turing test, which was proposed as a measure of machine-human likeness (and often confused primarily as a measure of 
-machine intelligence due to our nature as humans to measure intelligence) is a test in which the subject asks a series of questions
+machine intelligence due to our nature as humans to measure intelligence), is a test in which the subject asks a series of questions
 in a text-based console. The questions are given responses, and either the human or computer component of the experiement responds.
 The subject is then prompted to indicate whether the questions they ask or have asked either originate from a human or a computer
 solely based on those text responses, controlling any constants.
@@ -82,14 +82,15 @@ This project was built with the following language and packages for ease of use 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+To get this chatbot framework up and running on your local computer, follow these relatively simple steps to 
+get it up and working, and then start playing around with it however you'd like. The sky is the limit!
 
 ### Prerequisites
 
 You will need to use the [command line interface (CLI)](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line) to use this repo.
 Make sure, of course, that you have [Python](https://www.python.org/downloads/) and the Pip package manager installed (which usually comes with Python installation).
 1. If you can run the following commands you are ready to go:
+
 * python or python3
   ```sh
   python --version
@@ -97,6 +98,7 @@ Make sure, of course, that you have [Python](https://www.python.org/downloads/) 
   ```sh
   python3 --version
   ```
+
 * pip or pip3
    ```sh
   pip --version
@@ -162,7 +164,19 @@ _You may find the instructions to set up this chatbot locally on your computer h
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+When running `python3 turing_gpt.py` through your CLI, you will get something like the following if you are setting it up to mimic yourself:
+```
+Which QA model would you like to work with? 
+[basic/with_sources/custom_prompt/condense_prompt] (basic): condense_prompt
+Chat with custom data!
+---------------
+Your Question:  (What is your name?): What is your name?
+Answer: i'm Matthew
+---------------
+Your Question:  (What is your name?): What was your favorite part about your trip to South Africa?
+Answer: i'd have to say the wildlife. seeing all those animals in their natural habitat was 
+amazing
+```
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
@@ -195,10 +209,11 @@ Project Link: [https://github.com/mkantrr/personal-turing-test-chatbot](https://
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Some helpful resources used to complete this project and some inspiration:
+Some helpful resources used to complete this project, some inspiration, and information on privacy control with your data:
 
 * [Choose an Open Source License](https://choosealicense.com)
 * [ChatGPT Retrieval](https://github.com/techleadhd/chatgpt-retrieval)
+* [OpenAI's Privacy Policy](https://openai.com/policies/privacy-policy)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
