@@ -28,17 +28,48 @@
 
 [![Project Image][project-image]](https://www.omni-chatbot.com/wp-content/uploads/2019/12/test_turinga.jpg)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
-:q
-:q
+This project was a final project resulting from a semester of work in a class at the University of Mary Washington (UMW)
+in a class called ChatGPT and Generative AI (DGST301N). In an effort to test some hypotheses that current chatbot LLM models
+where becoming more advanced at a rate unheard of in an ever-expanding AI field, I developed this chatbot program to perform a
+series of turing tests personalized to my own "life" data to allow it to mimic how I might respond to people who know me and 
+who have had close communication with me a good portion of my life over text messaging (SMS) as much as possible.
+
+A turing test, which was proposed as a measure of machine-human likeness (and often confused primarily as a measure of 
+machine intelligence due to our nature as humans to measure intelligence) is a test in which the subject asks a series of questions
+in a text-based console. The questions are given responses, and either the human or computer component of the experiement responds.
+The subject is then prompted to indicate whether the questions they ask or have asked either originate from a human or a computer
+solely based on those text responses, controlling any constants.
+
+This turing test, which was personalized by nature, was a specific measure of how well an LLM model like GPT-4 from OpenAI could be
+instructed to be able to simulate human-likeness, most specifically my likeness. In doing so, I do not believe that this type of test
+on an LLM model of this nature would be a test of machine intelligence or evolution toward sentient AI. The LLM model, being predictive text,
+can only operate effectively on the instructions and information it is given, however it's hallucinations and made up information for data it
+does not know or cannot perceive are mostly believable for someone who may not personally know me in a personalized test. 
+
+Acting on only the information that it was given, the issue that arose was the scalability of data. For subjects who have known me for my entire life
+or know me very well, there will never be enough data I can feed to the model that would encompass my entire life memories, experiences, emotions, values,
+belief systems, etc. that would completely and accurate depict me to be able to completely mimic me, as a human. As such, I believe the results to this experiement
+were indicative in and of themselves considering the nature of data to act upon.
+
+While lacking in sample size, the results were surprising:
+
+* Out of 10 questions prompted by the subject in which 5 responses were of my own responses and 5 responses were that of the
+chatbot's, my girlfriend of three years (the subject) incorrectly indicated the origin of the response to 2 of the responses.
+* Out of 10 questions prompted by the subject in which 6 responses were of my own responses and 4 responses were that of the
+chatbot's, my mother (the subject) incorrectly indicated the origin of the response to 2 of the responses as well.
+* Out of 7 questions prompted by the subject in which 4 responses were of my own responses and 3 responses were that of the
+chatbot's, my best friend of three years (the subject) incorrectly indicated the origin of the response to 4 of the responses.
+
+If you would like to learn more about this experiment I conducted or the intricacies of creating a chatbot program like this,
+I refer you to [the presentation](https://youtu.be/QuBjjlUYBsM) on this project.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+This project was built with the following language and packages for ease of use and understanding.
 
 * [![Python][Python]][Python-url]
 * [![OpenAI][OpenAI]][OpenAI-url]
