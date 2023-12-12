@@ -58,7 +58,7 @@ To get a local copy up and running follow these simple example steps.
 
 You will need to use the [command line interface (CLI)](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line) to use this repo.
 Make sure, of course, that you have [Python](https://www.python.org/downloads/) and the Pip package manager installed (which usually comes with Python installation).
-If you can run the following commands you are ready to go:
+1. If you can run the following commands you are ready to go:
 * python or python3
   ```sh
   python --version
@@ -72,11 +72,14 @@ If you can run the following commands you are ready to go:
   ```
   ```sh
   pip3 --version
-  ``` 
+  ```
+
+2. Unfortunately, in order to use OpenAI's API endpoints to query their LLM models, there is a slight fee that accumulates each time you embed information (such as your own data) or each time you query the model
+and receive a response. Make sure you have added a small amount to your OpenAI account balance to account for these small fees.
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+_You may find the instructions to set up this chatbot locally on your computer here._
 
 1. Get an [OpenAPI](https://platform.openai.com/account/api-keys) key from your already made OpenAI account or by signing up at [OpenAI](https://openai.com/).
 2. Clone the repo
@@ -93,9 +96,20 @@ _Below is an example of how you can instruct your audience on installing and set
    ```
    And rename `chatbot/constants.txt` to `chatbot/constants.py`
 
-   Make a directory within `chatbot/` called `data/`. Place your own data for the LLM model to be trained on in this directory.
+5. Make a directory within `chatbot/` called `data/`. Place your own data for the LLM model to be trained on in this directory.
 
    An example file would be `data/data.txt` or `data/data.pdf`.
+
+6. Edit `chatbot/turing_gpt.py` from this line:
+   ```py
+   template = """  ***Your instructions to give the bot for responses to each question are given here.***
+   ```
+   to be something like:
+   ```py
+   template = """ Act like a really annoying car salesperson with every response you give.
+   ```
+   You may include any amount of instructions to this bot, and there is no specific block indentation or syntax required.
+   You must, however, be very specific with your instructions, as whatever you do not tell it that you might expect it to do will not always be the actual outcome.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
