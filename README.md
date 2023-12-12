@@ -78,7 +78,7 @@ If you can run the following commands you are ready to go:
 
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
-1. Get an OpenAPI key from your already made OpenAI account or by signing up at [OpenAI](https://openai.com/)
+1. Get an [OpenAPI](https://platform.openai.com/account/api-keys) key from your already made OpenAI account or by signing up at [OpenAI](https://openai.com/).
 2. Clone the repo
    ```sh
    https://github.com/mkantrr/personal-turing-test-chatbot.git
@@ -92,6 +92,10 @@ _Below is an example of how you can instruct your audience on installing and set
    APIKEY = "ENTER YOUR API"
    ```
    And rename `chatbot/constants.txt` to `chatbot/constants.py`
+
+   Make a directory within `chatbot/` called `data/`. Place your own data for the LLM model to be trained on in this directory.
+
+   An example file would be `data/data.txt` or `data/data.pdf`.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
