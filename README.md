@@ -155,3 +155,4 @@ Use this space to list resources you find helpful and would like to give credit 
 [OpenAI-url]: https://platform.openai.com/docs/overview
 [Langchain-url]: https://github.com/langchain-ai/langchain
 [Langchain]: https://img.shields.io/badge/Langchain-0081A5?style=for-the-badge&logo=openaigym&logoColor=white 
+[project-image]: https://www.omni-chatbot.com/wp-content/uploads/2019/12/test_turinga.jpg
