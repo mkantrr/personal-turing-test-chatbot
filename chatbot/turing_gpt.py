@@ -29,7 +29,7 @@ Standalone question:"""
 
 CONDENSE_QUESTION_PROMPT = PromptTemplate.from_template(_template)
 
-template = """Your instructions to give the bot for responses to each question are given here.
+template = """  ***Your instructions to give the bot for responses to each question are given here.***
 
 Question: {question}
 =========
