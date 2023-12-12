@@ -81,7 +81,7 @@ _Below is an example of how you can instruct your audience on installing and set
 1. Get an OpenAPI key from your already made OpenAI account or by signing up at [OpenAI](https://openai.com/)
 2. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   https://github.com/mkantrr/personal-turing-test-chatbot.git
    ```
 3. Install [Langchain][Langchain-url] and other required packages such as OpenAI's API for their chat models.
    ```sh
@@ -121,7 +121,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/mkantrr/personal-turing-test-chatbot](https://github.com/mkantrr/personal-turing-test-chatbot.git)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
