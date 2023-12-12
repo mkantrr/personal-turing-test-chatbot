@@ -1,7 +1,5 @@
 <a name="readme-top"></a>
 
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -100,7 +98,7 @@ _You may find the instructions to set up this chatbot locally on your computer h
 
    An example file would be `data/data.txt` or `data/data.pdf`.
 
-6. Edit `chatbot/turing_gpt.py` from this line:
+6. Edit `chatbot/turing_gpt.py` from these lines:
    ```py
    template = """  ***Your instructions to give the bot for responses to each question are given here.***
 
@@ -150,7 +148,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Matthew Kanter - [LinkedIn][linkedin-url] - mkanter@umw.edu
+Matthew Kanter - mkanter@umw.edu [![LinkedIn][linkedin-shield]][linkedin-url]
 
 Project Link: [https://github.com/mkantrr/personal-turing-test-chatbot](https://github.com/mkantrr/personal-turing-test-chatbot.git)
 
