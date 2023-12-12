@@ -103,11 +103,24 @@ _You may find the instructions to set up this chatbot locally on your computer h
 6. Edit `chatbot/turing_gpt.py` from this line:
    ```py
    template = """  ***Your instructions to give the bot for responses to each question are given here.***
+
+    Question: {question}
+    =========
+    {context}
+    =========
+    Answer in Markdown:"""
    ```
    to be something like:
    ```py
-   template = """ Act like a really annoying car salesperson with every response you give.
-   ```
+   template = """  Act like a really annoying car salesperson with every response you give.
+
+    Question: {question}
+    =========
+    {context}
+    =========
+    Answer in Markdown:"""
+    ```
+
    You may include any amount of instructions to this bot, and there is no specific block indentation or syntax required.
    You must, however, be very specific with your instructions, as whatever you do not tell it that you might expect it to do will not always be the actual outcome.
 
@@ -128,7 +141,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See `LICENSE` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -137,7 +150,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Matthew Kanter - [LinkedIn][linkedin-url] - mkanter@umw.edu
 
 Project Link: [https://github.com/mkantrr/personal-turing-test-chatbot](https://github.com/mkantrr/personal-turing-test-chatbot.git)
 
@@ -148,16 +161,10 @@ Project Link: [https://github.com/mkantrr/personal-turing-test-chatbot](https://
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+Some helpful resources used to complete this project and some inspiration:
 
 * [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+* [ChatGPT Retrieval](https://github.com/techleadhd/chatgpt-retrieval)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
