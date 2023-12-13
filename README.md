@@ -121,7 +121,7 @@ _You may find the instructions to set up this chatbot locally on your computer h
    ```
 3. Install [Langchain][Langchain-url] and other required packages such as OpenAI's API for their chat models.
    ```sh
-   pip install langchain openai chromadb tiktoken unstructured
+   pip install langchain openai chromadb tiktoken unstructured rich
    ```
 4. Enter your API in `chatbot/constants.txt`
    ```py
