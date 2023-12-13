@@ -285,4 +285,4 @@ Some helpful resources used to complete this project, some inspiration, and info
 [OpenAI-url]: https://platform.openai.com/docs/overview
 [Langchain-url]: https://github.com/langchain-ai/langchain
 [Langchain]: https://img.shields.io/badge/Langchain-0081A5?style=for-the-badge&logo=openaigym&logoColor=white 
-[project-image]: https://www.omni-chatbot.com/wp-content/uploads/2019/12/test_turinga.jpg
+[project-image]: https://www.cybiant.com/wp-content/uploads/2020/08/Knowledge-Article-Turing-Test-scaled.jpg
