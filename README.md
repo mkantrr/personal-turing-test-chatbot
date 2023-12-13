@@ -115,7 +115,7 @@ and receive a response. Make sure you have added a small amount to your OpenAI a
 _You may find the instructions to set up this chatbot locally on your computer here._
 
 1. Get an [OpenAPI](https://platform.openai.com/account/api-keys) key from your already made OpenAI account or by signing up.
-2. Clone the repo
+2. Clone the repository.
    ```sh
    https://github.com/mkantrr/personal-turing-test-chatbot.git
    ```
@@ -123,11 +123,11 @@ _You may find the instructions to set up this chatbot locally on your computer h
    ```sh
    pip install langchain openai chromadb tiktoken unstructured rich
    ```
-4. Enter your API in `chatbot/constants.txt`
+4. Enter your API in `chatbot/constants.txt`.
    ```py
    APIKEY = "ENTER YOUR API"
    ```
-   And rename `chatbot/constants.txt` to `chatbot/constants.py`
+   And rename `chatbot/constants.txt` to `chatbot/constants.py`.
 
 5. Navigate to `chatbot/data/`. Place your own data for the LLM model to reference in this directory.
 
