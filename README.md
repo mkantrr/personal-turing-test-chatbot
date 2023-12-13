@@ -166,6 +166,7 @@ _You may find the instructions to set up this chatbot locally on your computer h
 
 When running `python3 turing_gpt.py` through your CLI, you will get something like the following if you are setting it up to mimic yourself:
 ```
+$ python3 turing_gpt.py
 Which QA model would you like to work with? 
 [basic/with_sources/custom_prompt/condense_prompt/exit] (basic): condense_prompt
 Chat with custom data!
