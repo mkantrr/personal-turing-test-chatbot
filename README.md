@@ -26,7 +26,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Project Image][project-image]](https://www.omni-chatbot.com/wp-content/uploads/2019/12/test_turinga.jpg)
+[![Project Image][project-image]](https://www.cybiant.com/wp-content/uploads/2020/08/Knowledge-Article-Turing-Test-scaled.jpg)
 
 This project was a final project resulting from a semester of work in a class at the University of Mary Washington (UMW)
 in a class called ChatGPT and Generative AI (DGST301N). In an effort to test some hypotheses that current chatbot LLM models
