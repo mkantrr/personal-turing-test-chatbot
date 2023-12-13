@@ -189,7 +189,7 @@ The lines at the top that read:
 
 Is the type of Question-Answer model you would like to use. 
 * `basic` is without any instruction prompts or internal formatting.
-* `with_sources` includes information about which document you provided the model got its answer from. 
+* `with_sources` includes information about which document you provided the model got its answer from, but does not include any custom prompting. 
 * `custom_prompt` includes the instruction set given in #6 of the [installation process](#installation).
 * `condense_prompt`includes the custom prompt as well as an internal formatting structure that helps the model answer follow up questions effectively.
 Refer to the top of `turing_gpt.py` to see this Question-Answer structure.
