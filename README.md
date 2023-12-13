@@ -177,8 +177,60 @@ Your Question:  (What is your name?): What was your favorite part about your tri
 Answer: i'd have to say the wildlife. seeing all those animals in their natural habitat was 
 amazing
 ```
+This is just one such example output for a chatbot that has been fine tuned to read like a friendly, low effort text message between friends.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+The text in parentheses after the text `Your Question:` is the default question it will ask the bot if there is no user input.
+If you would like to change this default quesion, refer to `turing_gpt.py` at the bottom of the file to see where this default question is set.
+
+The lines at the top that read:
+```Which QA model would you like to work with? 
+[basic/with_sources/custom_prompt/condense_prompt] (basic):
+```
+
+Is the type of Question-Answer model you would like to use. 
+* `basic` is without any instruction prompts or internal formatting.
+* `with_sources` includes information about which document you provided the model got its answer from. 
+* `custom_prompt` includes the instruction set given in #6 of the [installation process](#installation).
+* `condense_prompt`includes the custom prompt as well as an internal formatting structure that helps the model answer follow up questions effectively.
+Refer to the top of `turing_gpt.py` to see this Question-Answer structure.
+* Once again, `(basic)` means that the default model used will be the `basic` model if no user input is given.
+
+
+There are plenty of other uses for this bot and plenty more fine tuning able to be done to make it respond exactly how you would like, but it can also
+have plenty of other use cases. For example:
+* Asking it to autocomplete some code if you feed it some unfinished code
+* Asking it to summarize your work experience on your resume, in bullets
+* Doing some schedule management on a schedule document to modify or add some events
+* Your own personal calculator!
+
+Another such example of another use case is making it solve a computational theory finite automata problem:
+```
+Your Question:  (What is your name?): Could you solve a finite automata for a word that ends in abc over a language {a, b, c}?
+Answer: Sure, let's design a finite automaton that accepts words ending in "abc" over the language {a, b, c}.
+
+A deterministic finite automaton (DFA) for this condition can be represented by Q = {q0, q1, q2, q3}, Σ = {a, b, c}, δ, q0, F 
+= {q3} where Q is a set of states, Σ is the alphabet set, δ is the transition function, q0 is the initial state and F is the 
+set of final states.
+
+The transition function δ is defined as:
+
+δ(q0, a) = q1
+δ(q0, b) = q0
+δ(q0, c) = q0
+δ(q1, a) = q1
+δ(q1, b) = q2
+δ(q1, c) = q0
+δ(q2, a) = q1
+δ(q2, b) = q0
+δ(q2, c) = q3
+δ(q3, a) = q1
+δ(q3, b) = q0
+δ(q3, c) = q0
+
+...
+**Explanation of transitions given***
+...
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
