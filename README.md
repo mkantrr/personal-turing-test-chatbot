@@ -114,7 +114,7 @@ and receive a response. Make sure you have added a small amount to your OpenAI a
 
 _You may find the instructions to set up this chatbot locally on your computer here._
 
-1. Get an [OpenAPI](https://platform.openai.com/account/api-keys) key from your already made OpenAI account or by signing up at [OpenAI](https://openai.com/).
+1. Get an [OpenAPI](https://platform.openai.com/account/api-keys) key from your already made OpenAI account or by signing up.
 2. Clone the repo
    ```sh
    https://github.com/mkantrr/personal-turing-test-chatbot.git
@@ -129,7 +129,7 @@ _You may find the instructions to set up this chatbot locally on your computer h
    ```
    And rename `chatbot/constants.txt` to `chatbot/constants.py`
 
-5. Make a directory within `chatbot/` called `data/`. Place your own data for the LLM model to be trained on in this directory.
+5. Make a directory within `chatbot/` called `data/`. Place your own data for the LLM model to reference in this directory.
 
    An example file would be `data/data.txt` or `data/data.pdf`.
 
