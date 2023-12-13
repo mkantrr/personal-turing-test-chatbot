@@ -115,9 +115,9 @@ and receive a response. Make sure you have added a small amount to your OpenAI a
 _You may find the instructions to set up this chatbot locally on your computer here._
 
 1. Get an [OpenAPI](https://platform.openai.com/account/api-keys) key from your already made OpenAI account or by signing up.
-2. Clone the repository.
+2. [Clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) the repository (must have a GitHub account).
    ```sh
-   https://github.com/mkantrr/personal-turing-test-chatbot.git
+   git clone https://github.com/mkantrr/personal-turing-test-chatbot.git
    ```
 3. Install [Langchain][Langchain-url] and other required packages such as OpenAI's API for their chat models.
    ```sh
