@@ -129,7 +129,7 @@ _You may find the instructions to set up this chatbot locally on your computer h
    ```
    And rename `chatbot/constants.txt` to `chatbot/constants.py`
 
-5. Make a directory within `chatbot/` called `data/`. Place your own data for the LLM model to reference in this directory.
+5. Navigate to `chatbot/data/`. Place your own data for the LLM model to reference in this directory.
 
    An example file would be `data/data.txt` or `data/data.pdf`.
 
