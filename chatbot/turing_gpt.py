@@ -45,7 +45,7 @@ QA_PROMPT = PromptTemplate(template=template, input_variables=[
 os.environ["OPENAI_API_KEY"] = constants.APIKEY
 
 # Enable to save to disk & reuse the model (for repeated queries on the same data)
-PERSIST = False
+PERSIST = True
 
 if PERSIST and os.path.exists("persist"):
   print("Reusing index...\n")
@@ -125,7 +125,8 @@ chain_options = {
     "basic": get_basic_qa_chain,
     "with_sources": get_qa_with_sources_chain,
     "custom_prompt": get_custom_prompt_qa_chain,
-    "condense_prompt": get_condense_prompt_qa_chain
+    "condense_prompt": get_condense_prompt_qa_chain,
+    "exit": sys.exit,
 }
 
 #program starts here
@@ -136,6 +137,7 @@ if __name__ == "__main__":
     model = Prompt.ask("Which QA model would you like to work with?",
                        choices=list(chain_options.keys()),
                        default="basic")
+    #quit out of the program if user types any of the following
 
     #select model based on chain_options object above
     chain = chain_options[model]()
@@ -151,7 +153,7 @@ if __name__ == "__main__":
         question = Prompt.ask("Your Question: ", default=default_question)
 
         #quit out of the program if user types any of the following
-        if question in ['quit', 'q', 'exit', 'quit()', 'exit()']:
+        if question in ['quit', 'exit', 'quit()', 'exit()']:
             sys.exit()
 
         #get response from QA model and print the answer

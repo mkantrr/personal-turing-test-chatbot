@@ -167,7 +167,7 @@ _You may find the instructions to set up this chatbot locally on your computer h
 When running `python3 turing_gpt.py` through your CLI, you will get something like the following if you are setting it up to mimic yourself:
 ```
 Which QA model would you like to work with? 
-[basic/with_sources/custom_prompt/condense_prompt] (basic): condense_prompt
+[basic/with_sources/custom_prompt/condense_prompt/exit] (basic): condense_prompt
 Chat with custom data!
 ---------------
 Your Question:  (What is your name?): What is your name?
@@ -185,7 +185,7 @@ If you would like to change this default quesion, refer to `turing_gpt.py` at th
 The lines at the top that read:
 ```
 Which QA model would you like to work with? 
-[basic/with_sources/custom_prompt/condense_prompt] (basic):
+[basic/with_sources/custom_prompt/condense_prompt/exit] (basic):
 ```
 Is the type of Question-Answer model you would like to use:
 * `basic` is without any instruction prompts or internal formatting.
@@ -193,6 +193,7 @@ Is the type of Question-Answer model you would like to use:
 * `custom_prompt` includes the instruction set given in #6 of the [installation process](#installation).
 * `condense_prompt`includes the custom prompt as well as an internal formatting structure that helps the model answer follow up questions effectively.
 Refer to the top of `turing_gpt.py` to see this Question-Answer structure.
+* `exit` just means that the program will exit if selected.
 * Once again, `(basic)` means that the default model used will be the `basic` model if no user input is given.
 
 
