@@ -253,6 +253,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 Matthew Kanter - mkanter@umw.edu
 
 Project Link: [https://github.com/mkantrr/personal-turing-test-chatbot](https://github.com/mkantrr/personal-turing-test-chatbot.git)
+
 Project Presentation: [YouTube Video](https://youtu.be/QuBjjlUYBsM)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
