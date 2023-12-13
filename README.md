@@ -155,7 +155,7 @@ _You may find the instructions to set up this chatbot locally on your computer h
     ```
 
    You may include any amount of instructions to this bot, and there is no specific block indentation or syntax required.
-   You must, however, be very specific with your instructions, as whatever you do not tell it that you might expect it to do will not always be the actual outcome.
+   You must, however, be very specific with your instructions. Whatever you do not tell it that you might expect it to know or do will not always be true.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -253,6 +253,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 Matthew Kanter - mkanter@umw.edu
 
 Project Link: [https://github.com/mkantrr/personal-turing-test-chatbot](https://github.com/mkantrr/personal-turing-test-chatbot.git)
+Project Presentation: [YouTube Video](https://youtu.be/QuBjjlUYBsM)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -265,6 +266,7 @@ Some helpful resources used to complete this project, some inspiration, and info
 
 * [Choose an Open Source License](https://choosealicense.com)
 * [ChatGPT Retrieval](https://github.com/techleadhd/chatgpt-retrieval)
+* [Chat-Your-Data](https://github.com/hwchase17/chat-your-data/tree/master)
 * [OpenAI's Privacy Policy](https://openai.com/policies/privacy-policy)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
