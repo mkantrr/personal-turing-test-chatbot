@@ -155,7 +155,7 @@ _You may find the instructions to set up this chatbot locally on your computer h
     ```
 
    You may include any amount of instructions to this bot, and there is no specific block indentation or syntax required.
-   You must, however, be very specific with your instructions. Whatever you do not tell it that you might expect it to know or do will not always be true.
+   You must, however, be very specific with your instructions. Whatever you do not tell it that you might expect it to know or do will not always be the observed outcome.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
