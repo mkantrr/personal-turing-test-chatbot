@@ -183,11 +183,11 @@ The text in parentheses after the text `Your Question:` is the default question 
 If you would like to change this default quesion, refer to `turing_gpt.py` at the bottom of the file to see where this default question is set.
 
 The lines at the top that read:
-```Which QA model would you like to work with? 
+```
+Which QA model would you like to work with? 
 [basic/with_sources/custom_prompt/condense_prompt] (basic):
 ```
-
-Is the type of Question-Answer model you would like to use. 
+Is the type of Question-Answer model you would like to use:
 * `basic` is without any instruction prompts or internal formatting.
 * `with_sources` includes information about which document you provided the model got its answer from, but does not include any custom prompting. 
 * `custom_prompt` includes the instruction set given in #6 of the [installation process](#installation).
@@ -203,7 +203,7 @@ have plenty of other use cases. For example:
 * Doing some schedule management on a schedule document to modify or add some events
 * Your own personal calculator!
 
-Another such example of another use case is making it solve a computational theory finite automata problem:
+Another such example of a use case is making it solve a computational theory finite automata problem:
 ```
 Your Question:  (What is your name?): Could you solve a finite automata for a word that ends in abc over a language {a, b, c}?
 Answer: Sure, let's design a finite automaton that accepts words ending in "abc" over the language {a, b, c}.
@@ -228,7 +228,7 @@ The transition function δ is defined as:
 δ(q3, c) = q0
 
 ...
-**Explanation of transitions given***
+** Explanation of transitions given **
 ...
 ```
 
