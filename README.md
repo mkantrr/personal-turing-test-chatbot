@@ -123,9 +123,9 @@ _You may find the instructions to set up this chatbot locally on your computer h
    ```sh
    pip install langchain openai chromadb tiktoken unstructured rich
    ```
-4. Enter your API in `chatbot/constants.txt`.
+4. Enter your API key in `chatbot/constants.txt`.
    ```py
-   APIKEY = "ENTER YOUR API"
+   APIKEY = "ENTER YOUR API KEY"
    ```
    And rename `chatbot/constants.txt` to `chatbot/constants.py`.
 
