@@ -8,3 +8,4 @@ sampledata_test/
 *.pdf
 *.swp
 mattgpt.py
+!constants.txt
